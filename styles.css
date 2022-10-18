@@ -1,0 +1,315 @@
+/* GetStarted - A simple responsive Startpage
+ * Author: MrAlpha786 (github.con/MrAlpha786) */
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: url("asset/fonts/IBMPlexMono-Regular.otf");
+}
+
+/* Colors and other var*/
+:root {
+  /* GLOBAL  COLORS  */
+  --bg: #282a36;
+  --fg: #f8f8f2;
+
+  --secondaryBg: #44475a;
+
+  --black: #282a36;
+  --blue: rgb(98, 114, 164);
+  --green: #50fa7b;
+  --orange: #ffb86c;
+  --pink: #ff79c6;
+  --purple: #9580ff;
+  --red: #ff5555;
+  --white: #f8f8f2;
+  --yellow: #f1fa8c;
+
+  --fontFamily: "IBM Plex Mono", monospace;
+  --invert: 0;
+  --scrollbar: var(--accentColor);
+
+  /* PREFERRED ACCEMT */
+
+  --accentColor: var(--green);
+}
+
+body {
+  background-color: var(--bg);
+}
+
+* {
+  -ms-overflow-style: none;
+  -webkit-tap-highlight-color: transparent;
+  border: 0;
+  box-sizing: border-box;
+  color: var(--fg);
+  font-family: var(--fontFamily);
+  outline-style: none;
+  scrollbar-color: #00000000 #00000000;
+  scrollbar-width: thin;
+  text-decoration: none;
+}
+::-webkit-scrollbar {
+  width: 0.3em;
+}
+
+::-webkit-scrollbar-track {
+  background: #00000000;
+  margin-bottom: 0.75em;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #00000000;
+  border-radius: 1em;
+}
+
+:hover,
+.visible-scrollbar {
+  scrollbar-color: var(--scrollbar) #00000000;
+}
+
+:hover::-webkit-scrollbar-thumb,
+.visible-scrollbar::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar);
+}
+
+a {
+  border-bottom: 1px solid var(--pink);
+}
+
+a:hover {
+  opacity: .6;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+li {
+  margin: 10px 0px;
+}
+
+header {
+  position: relative;
+  display: block !important;
+  background: var(--white);
+  padding: 10px;
+  margin: 10px;
+}
+
+header h1 {
+  color: var(--black);
+  -webkit-transform: rotate(-90deg);
+  -webkit-transform-origin: (0 0);
+  font-size: 2em;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.secondary-header {
+  position: relative;
+  display: block !important;
+  padding: 10px;
+  margin: 10px;
+}
+
+.secondary-header h2 {
+  -webkit-transform: rotate(-90deg);
+  -webkit-transform-origin: (0 0);
+  font-size: 2em;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+#header-blogger {
+  background: var(--orange);
+}
+
+#header-tumblr {
+background: var(--blue);
+}
+
+#header-others {
+background: var(--red);
+}
+
+#header-blogger h2 {
+color: var(--black);
+}
+
+.container {
+  position: relative;
+}
+
+.main {
+  display: flex;
+  direction: flex-column;
+  justify-content: flex-start;
+  position: relative;
+  margin: 20px auto;
+  width: 80%;
+  overflow: scroll;
+  height: 80vh;
+}
+
+.column {
+  position: relative;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid var(--pink);
+  display: flex;
+}
+
+.content-column {
+  min-width: 350px;
+  font-size: 1.5em;
+  padding: 20px;
+}
+
+.footer {
+  font-size: 90%;
+  padding: 0.5em;
+  position: relative;
+  text-align: center;
+  width: 90%;
+}
+
+.footer a {
+  filter: opacity(0.5);
+}
+
+.footer a {
+  text-decoration: underline;
+  filter: opacity(0.5);
+}
+
+.footer a:hover {
+  filter: opacity(1);
+}
+
+#footer-inner {
+  position: sticky;
+  bottom: 1em;
+}
+
+/* LAST.FM NOW PLAYING WIDGET */
+
+div#nowPlaying-container {
+  transition: all 4s cubic-bezier(1, 0.835, 0, 0.945);
+  width: 90%;
+  max-width: 640px;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  display: inline-block;
+}
+
+div#nowPlaying-container #playingInfo p {
+  margin: 5px;
+}
+
+#playingInfo p.playing-now,
+#playingInfo p.playing-not {
+  text-transform: uppercase;
+  animation: scroll-left 20s linear infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-flex;
+  justify-content: flex-start;
+  font-size: 1.5em;
+}
+
+#playingInfo p.playing-now:hover,
+#playingInfo p.playing-not:hover {
+  animation-play-state: paused;
+}
+
+span.titleNowPlaying {
+  animation: none !important;
+  text-transform: lowercase;
+  font-style: italic;
+  display: block;
+  text-align: center;
+}
+
+span.info-connector {
+  text-transform: lowercase;
+  font-style: italic;
+  font-weight: 300;
+  position: relative;
+  display: inline-flex;
+  margin: 0 1em 0 0.75em;
+}
+
+#playingInfo p.playing-not {
+  text-transform: lowercase !important;
+  font-style: italic;
+  animation: scroll-left 20s linear infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-flex;
+}
+
+p.playing-not a {
+  text-decoration: underline;
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(150%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* BARS EQUALIZER */
+
+.bars {
+  align-items: flex-end;
+  display: inline-flex;
+  justify-content: space-between;
+  height: 10m;
+  margin-bottom: -10px;
+  padding-right: 10px;
+  padding-bottom: 0px;
+}
+
+.bars .bar {
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-name: oscillator;
+  animation-timing-function: linear;
+  width: 1em;
+  padding-left: 2px;
+  margin-right: 4px;
+  background-color: var(--green);
+}
+
+.bars .bar.bar1 {
+  animation-duration: 400ms;
+}
+
+.bars .bar.bar2 {
+  animation-duration: 700ms;
+}
+
+.bars .bar.bar3 {
+  animation-duration: 200ms;
+}
+
+@keyframes oscillator {
+  0% {
+    height: 20%;
+    opacity: 0.5;
+  }
+
+  to {
+    height: 100%;
+    opacity: 1;
+  }
+}
+
+/* END EQUALIZER */
