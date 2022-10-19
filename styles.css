@@ -158,14 +158,13 @@ color: var(--black);
   margin: 20px auto;
   width: 80%;
   overflow: scroll;
-  height: 80vh;
 }
 
 .column {
   position: relative;
   margin: 10px;
   padding: 10px;
-  border: 1px solid var(--pink);
+  border: 4px solid var(--pink);
   display: flex;
 }
 
@@ -201,6 +200,24 @@ color: var(--black);
   bottom: 1em;
 }
 
+#blinking {
+  font-size: 14px;
+  height: 10px;
+  padding: 2px;
+  color: var(--black);
+  background-color: var(--yellow);
+  position: relative;
+  bottom: 1em;
+}
+
+#blinking::before {
+  animation: blink 0.5s infinite;
+  content: "New!"
+
+}
+
+@keyframes blink { 0%{ filter:opacity(0); } 100%{ filter:opacity(1); } }
+
 /* LAST.FM NOW PLAYING WIDGET */
 
 div#nowPlaying-container {
@@ -214,7 +231,7 @@ div#nowPlaying-container {
 }
 
 div#nowPlaying-container #playingInfo p {
-  margin: 5px;
+  margin: 0px auto;
 }
 
 #playingInfo p.playing-now,
