@@ -33,104 +33,113 @@
         });
       }); /*]]>*/
     </script>
+
+    <script type="text/javascript">
+      // Open links in new tab
+      document.addEventListener("click", function (e) {
+        if (e.target.tagName == "A" && !e.target.hasAttribute("target")) {
+          e.target.setAttribute("target", "_blank");
+        }
+      });
+    </script>
   </head>
 
   <body>
     <div class="container">
       <div class="main">
-      <header>
-        <h1>GABEweb @ GitHub</h1>
-      </header>
-      <div class="column">
-        <div class="content-column">
-          <h2>Main Repositories</h2>
+        <header>
+          <h1>GABEweb @ GitHub</h1>
+        </header>
+        <div class="column">
+          <div class="content-column">
+            <h2>Main Repositories</h2>
 
-          <ul>
-            <li>
-              <a href="https://gabeweb.github.io/gabestart/">GABEstart</a>
-            </li>
-            <li>
-              <a href="https://github.com/gabeweb/Firefox-Browser-Proton-Custom"
-                >Firefox-Browser-Proton-Custom</a
-              >
-            </li>
-            <li>
-              <a href="https://github.com/gabeweb/KeePassKeyFile.ODS"
-                >KeePassKeyFile.ODS</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="secondary-header" id="header-blogger">
-        <h2>GABEweb @ Blogger</h2>
-      </div>
-      <div class="column">
-        <div class="content-column">
-          <h2>Blogger</h2>
-          <ul>
-            <li><a href="https://gabemode.blogspot.com">GABEmode</a></li>
-            <li><a href="https://gabeturbo.blogspot.com">GABEturbo</a></li>
-            <li><a href="https://gabegizmo.blogspot.com">GABEgizmo</a></li>
-            <li><a href="https://gabeindie.blogspot.com">GABEindie</a></li>
-            <li><a href="https://gabeweb.blogspot.com">GABEblog</a></li>
-          </ul>
-        </div>
-      </div>
-
-
-
-      <div class="secondary-header" id="header-tumblr">
-        <h2>GABEweb @ Tumblr</h2>
-      </div>
-
-      <div class="column">
-        <div class="content-column">
-          <h2>Tumblr</h2>
-          <ul>
-            <li><a href="https://gabemax.tumblr.com">GABEmax</a></li>
-            <li><a href="https://gabeturbo.tumblr.com">GABEturbo</a></li>
-            <li><a href="https://gabegizmo.tumblr.com">GABEgizmo</a></li>
-            <li><a href="https://gabeindie.tumblr.com">GABEindie</a></li>
-            <li><a href="https://gabehits.tumblr.com">GABEhits</a></li>
-            <li><a href="https://gabeweb.tumblr.com">GABEtumblr</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="secondary-header" id="header-others">
-        <h2>GABEweb @ Others</h2>
-      </div>
-
-      <div class="column">
-        <div class="content-column">
-          <h2>Others</h2>
-
-          <ul style="font-size: 0.8em;">
-            <li><a href="https://coindrop.to/gabeweb">Coindrop</a></li>
-            <li><a href="https://addons.mozilla.org/en-US/firefox/collections/1682134/favorites/">My Favorite Firefox Addons</a></li>
-            <li><a href="https://ko-fi.com/gabeweb">Ko-fi</a></li>
-            <li><a href="https://www.last.fm/user/gabeweb">Last.fm</a></li>
-            <li><a href="https://gabeweb.neocities.org">NeoCities</a></li>
-            <li><a href="https://www.reddit.com/u/gabeweb">Reddit</a></li>
-            <li><a href="https://www.twitter.com/gabeweb">Twitter</a></li>
-            <li><a href="https://www.trakt.tv/users/gabeweb">Trakt.tv</a></li>
-            <li><a href="https://www.volt.fm/gabeweb">Volt.fm</a></li>
+            <ul>
+              <li>
+                <a href="https://gabeweb.github.io/gabestart/">GABEstart</a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/gabeweb/Firefox-Browser-Proton-Custom"
+                  >Firefox-Browser-Proton-Custom</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/gabeweb/KeePassKeyFile.ODS"
+                  >KeePassKeyFile.ODS</a
+                >
+              </li>
             </ul>
+          </div>
+        </div>
+        <div class="secondary-header" id="header-blogger">
+          <h2>GABEweb @ Blogger</h2>
+        </div>
+        <div class="column">
+          <div class="content-column">
+            <h2>Blogger</h2>
+            <ul>
+              <li><a href="https://gabemode.blogspot.com">GABEmode</a></li>
+              <li><a href="https://gabeturbo.blogspot.com">GABEturbo</a></li>
+              <li><a href="https://gabegizmo.blogspot.com">GABEgizmo</a></li>
+              <li><a href="https://gabeindie.blogspot.com">GABEindie</a></li>
+              <li><a href="https://gabeweb.blogspot.com">GABEblog</a></li>
+            </ul>
+          </div>
+        </div>
 
+        <div class="secondary-header" id="header-tumblr">
+          <h2>GABEweb @ Tumblr</h2>
+        </div>
 
+        <div class="column">
+          <div class="content-column">
+            <h2>Tumblr</h2>
+            <ul>
+              <li><a href="https://gabemax.tumblr.com">GABEmax</a></li>
+              <li><a href="https://gabeturbo.tumblr.com">GABEturbo</a></li>
+              <li><a href="https://gabegizmo.tumblr.com">GABEgizmo</a></li>
+              <li><a href="https://gabeindie.tumblr.com">GABEindie</a></li>
+              <li><a href="https://gabehits.tumblr.com">GABEhits</a></li>
+              <li><a href="https://gabeweb.tumblr.com">GABEtumblr</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="secondary-header" id="header-others">
+          <h2>GABEweb @ Others</h2>
+        </div>
+
+        <div class="column">
+          <div class="content-column">
+            <h2>Others</h2>
+
+            <ul style="font-size: 0.8em">
+              <li><a href="https://coindrop.to/gabeweb">Coindrop</a></li>
+              <li>
+                <a
+                  href="https://addons.mozilla.org/en-US/firefox/collections/1682134/favorites/"
+                  >My Favorite Firefox Addons</a
+                >
+              </li>
+              <li><a href="https://ko-fi.com/gabeweb">Ko-fi</a></li>
+              <li><a href="https://www.last.fm/user/gabeweb">Last.fm</a></li>
+              <li><a href="https://gabeweb.neocities.org">NeoCities</a></li>
+              <li><a href="https://www.reddit.com/u/gabeweb">Reddit</a></li>
+              <li><a href="https://www.twitter.com/gabeweb">Twitter</a></li>
+              <li><a href="https://www.trakt.tv/users/gabeweb">Trakt.tv</a></li>
+              <li><a href="https://www.volt.fm/gabeweb">Volt.fm</a></li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
       <div class="footer">
         <div id="footer-inner">
           <div id="nowPlaying-container">
             <div id="playingInfo"></div>
-          </div>        </div>
+          </div>
+        </div>
       </div>
-
     </div>
-
-
   </body>
 </html>
