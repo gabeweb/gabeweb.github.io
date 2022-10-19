@@ -92,31 +92,39 @@ li {
 
 header {
   position: relative;
-  display: block !important;
+  display: inline-block;
   background: var(--white);
-  padding: 10px;
+  padding: 40px;
   margin: 10px;
+  width: 300px;
 }
 
-header h1 {
+h1 {
   color: var(--black);
-  -webkit-transform: rotate(-90deg);
-  -webkit-transform-origin: (0 0);
   font-size: 2em;
-  text-align: center;
   letter-spacing: 2px;
+}
+
+#rotation {
+  text-align: center;
+  align: middle;
+  width: 20px;
+  letter-spacing: 2px;
+  -webkit-writing-mode: vertical-lr;
+  writing-mode: sideways-lr;
+  transform-origin: bottom left;
+
 }
 
 .secondary-header {
   position: relative;
   display: block !important;
-  padding: 10px;
+  padding: 40px;
   margin: 10px;
 }
 
 .secondary-header h2 {
-  -webkit-transform: rotate(-90deg);
-  -webkit-transform-origin: (0 0);
+  writing-mode: sideways-lr;
   font-size: 2em;
   text-align: center;
   letter-spacing: 2px;
