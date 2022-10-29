@@ -78,7 +78,7 @@ a {
 }
 
 a:hover {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 ul {
@@ -113,7 +113,6 @@ h1 {
   -webkit-writing-mode: vertical-lr;
   writing-mode: sideways-lr;
   transform-origin: bottom left;
-
 }
 
 .secondary-header {
@@ -135,15 +134,15 @@ h1 {
 }
 
 #header-tumblr {
-background: var(--blue);
+  background: var(--blue);
 }
 
 #header-others {
-background: var(--red);
+  background: var(--red);
 }
 
 #header-blogger h2 {
-color: var(--black);
+  color: var(--black);
 }
 
 .container {
@@ -212,11 +211,17 @@ color: var(--black);
 
 #blinking::before {
   animation: blink 0.5s infinite;
-  content: "New!"
-
+  content: "New!";
 }
 
-@keyframes blink { 0%{ filter:opacity(0); } 100%{ filter:opacity(1); } }
+@keyframes blink {
+  0% {
+    filter: opacity(0);
+  }
+  100% {
+    filter: opacity(1);
+  }
+}
 
 /* LAST.FM NOW PLAYING WIDGET */
 
@@ -225,13 +230,13 @@ div#nowPlaying-container {
   width: 90%;
   max-width: 640px;
   overflow: hidden;
-  padding: 0;
   position: relative;
   display: inline-block;
 }
 
 div#nowPlaying-container #playingInfo p {
-  margin: 0px auto;
+  margin: -4 auto;
+  padding: 0px;
 }
 
 #playingInfo p.playing-now,
@@ -241,8 +246,8 @@ div#nowPlaying-container #playingInfo p {
   white-space: nowrap;
   overflow: hidden;
   display: inline-flex;
-  justify-content: flex-start;
   font-size: 1.5em;
+  position: relative;
 }
 
 #playingInfo p.playing-now:hover,
