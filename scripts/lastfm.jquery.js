@@ -3,9 +3,10 @@
 simple last.fm jQuery plugin
 shows recently played tracks
 
-Athor: Ringo Rohe
-       - with much help from Douglas Neiner
+https://github.com/mmoss/jquery-lastfm
 
+Author: Ringo Rohe
+       - with much help from Douglas Neiner
 
 -- lastplayed --
 
