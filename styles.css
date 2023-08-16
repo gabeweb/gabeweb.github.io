@@ -25,6 +25,7 @@
   --yellow: #f1fa8c;
 
   --fontFamily: "IBM Plex Mono", monospace;
+  font-feature-settings: 'zero' 1;
   --invert: 0;
   --scrollbar: var(--accentColor);
 
