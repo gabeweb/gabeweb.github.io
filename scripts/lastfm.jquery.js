@@ -131,7 +131,7 @@ $('#nowPlayingBox').nowplaying({
             '<a href="https://last.fm/music/' +
             track.artist["#text"] +
             "/" +
-            track.album["#text"] +
+            "-" +
             "/" +
             track.name +
             '/" target="_blank">' +
