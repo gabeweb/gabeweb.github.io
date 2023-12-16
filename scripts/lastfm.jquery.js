@@ -128,7 +128,7 @@ $('#nowPlayingBox').nowplaying({
             html +
             '<span class="titleNowPlaying">Now Playing:<br></span>' +
             '<p class="playing-now"><object class="bars"><button class="bar bar1" /><button class="bar bar2" /><button class="bar bar3" /></object><span class="playing-info"><span class="track">' +
-            '<a href="https://last.fm/music/' +
+            '<a href="https://last.fm/user/' + options.username + '/library/music/' +
             track.artist["#text"] +
             "/" +
             "-" +
@@ -140,7 +140,7 @@ $('#nowPlayingBox').nowplaying({
             "</span>" +
             '<span class="info-connector"> by </span>' +
             '<span class="artist">' +
-            '<a href="https://last.fm/music/' +
+            '<a href="https://last.fm/user/' + options.username + '/library/music/' +
             track.artist["#text"] +
             '/" target="_blank">' +
             track.artist["#text"] +
@@ -151,7 +151,7 @@ $('#nowPlayingBox').nowplaying({
             html =
               html +
               '<span class="album"><span class="info-connector"> from </span>' +
-              '<a href="https://last.fm/music/' +
+              '<a href="https://last.fm/user/' + options.username + '/library/music/' +
               track.artist["#text"] +
               "/" +
               track.album["#text"] +
