@@ -112,11 +112,14 @@ body {
 }
 
 a {
-  border-bottom: 1px solid var(--pink);
+  border-bottom: 1px solid var(--green);
 }
 
-a:hover {
-  opacity: 0.6;
+a:hover,
+a:active {
+  text-decoration: none;
+  background-color: var(--accentColor);
+  color: var(--black) !important;
 }
 
 ul {
