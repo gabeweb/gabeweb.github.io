@@ -146,6 +146,10 @@ h1 {
   letter-spacing: 2px;
 }
 
+small {
+  font-size: 60%;
+}
+
 #rotation {
   text-align: center;
   align: middle;
@@ -220,6 +224,7 @@ h1 {
   min-width: 350px;
   font-size: 1.5em;
   padding: 20px;
+  overflow-wrap: anywhere;
 }
 
 .footer {
