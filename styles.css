@@ -134,7 +134,6 @@ li {
 header {
   position: relative;
   display: inline-block;
-  background: var(--white);
   padding: 40px;
   margin: 10px;
   width: 300px;
@@ -174,28 +173,28 @@ small {
   letter-spacing: 2px;
 }
 
-#header-blogger {
-  background: var(--orange);
+#header-01 {
+  background-color: var(--white);
 }
 
-#header-tumblr {
+#header-02 {
   background: var(--blue);
 }
 
-#header-wallets {
-  background-color: var(--green);
+#header-03 {
+  background: var(--green);
 }
 
-#header-wallets h2 {
+#header-04 {
+  background-color: var(--orange);
+}
+
+#header-03 h2, #header-04 h2 {
   color: var(--black);
 }
 
-#header-others {
+#header-05 {
   background: var(--red);
-}
-
-#header-blogger h2 {
-  color: var(--black);
 }
 
 .container {
@@ -216,13 +215,34 @@ small {
   position: relative;
   margin: 10px;
   padding: 10px;
-  border: 4px solid var(--pink);
+  border-width: 4px;
+  border-style: solid;
   display: flex;
+}
+
+.column#column-01 {
+  border-color: var(--white);
+}
+
+.column#column-02 {
+  border-color: var(--blue);
+}
+
+.column#column-03 {
+  border-color: var(--green);
+}
+
+.column#column-04 {
+  border-color: var(--orange);
+}
+
+.column#column-05 {
+  border-color: var(--red);
 }
 
 .content-column {
   min-width: 350px;
-  font-size: 1.5em;
+  font-size: 1.35em;
   padding: 20px;
   overflow-wrap: anywhere;
 }
