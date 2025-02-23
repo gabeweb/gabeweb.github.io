@@ -31,7 +31,7 @@
           username: "gabeweb",
           refresh: 60,
           notplayingtext:
-            '<p class="playing-not">See recently played tracks on: <a href="https://last.fm/user/gabeweb" target="_blank">last.fm/user/gabeweb</a></p>',
+            '<p class="playing-not"><span style="animation: blink 1s infinite; animation-direction: alternate; color: var(--red);">//</span>See recently played tracks on: <a href="https://last.fm/user/gabeweb" target="_blank">last.fm/user/gabeweb</a></p>',
         });
       }); /*]]>*/
     </script>
@@ -46,9 +46,13 @@
     </script>
   </head>
 
+  <style>
+  </style>
+
   <body>
     <div class="container">
       <div class="main">
+        <div id="containerized">
         <header id="header-01">
           <h1 id="rotation">GABEweb @ GitHub</h1>
         </header>
@@ -105,6 +109,9 @@
             </ul>
           </div>
         </div>
+      </div>
+
+      <div id="containerized">
         <div class="secondary-header" id="header-02">
           <h2 id="rotation">GABEweb @ Blogger</h2>
         </div>
@@ -121,6 +128,9 @@
             </ul>
           </div>
         </div>
+        </div>
+
+        <div id="containerized">
         <div class="secondary-header" id="header-03">
           <h2 id="rotation">GABEweb @ Tumblr</h2>
         </div>
@@ -137,6 +147,9 @@
             </ul>
           </div>
         </div>
+        </div>
+
+        <div id="containerized">
         <div class="secondary-header" id="header-04">
           <h2 id="rotation">GABEweb @ Social</h2>
         </div>
@@ -162,6 +175,9 @@
             </ul>
           </div>
         </div>
+        </div>
+
+        <div id="containerized">
         <div class="secondary-header" id="header-05">
           <h2 id="rotation">GABEweb @ Media</h2>
         </div>
@@ -192,6 +208,9 @@
             </ul>
           </div>
         </div>
+        </div>
+
+        <div id="containerized">
         <div class="secondary-header" id="header-06">
           <h2 id="rotation">GABEweb @ Wallets</h2>
         </div>
@@ -209,6 +228,8 @@
             </ul>
           </div>
         </div>
+        </div>
+        <div id="containerized">
         <div class="secondary-header" id="header-07">
           <h2 id="rotation">GABEweb @ Others</h2>
         </div>
@@ -252,14 +273,16 @@
             </ul>
           </div>
         </div>
+        </div>
+
       </div>
-      <div class="footer">
+      <footer class="footer">
         <div id="footer-inner">
           <div id="nowPlaying-container">
             <div id="playingInfo"></div>
           </div>
         </div>
-      </div>
+      </footer>
     </div>
   </body>
 </html>
