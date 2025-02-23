@@ -422,7 +422,8 @@ footer {
   text-decoration: underline;
 }
 
-.footer a:hover {
+.footer a:hover,
+.footer a:active {
   background-color: var(--red);
 }
 
