@@ -191,7 +191,7 @@ header {
   display: inline-block;
   padding: 40px;
   /*margin: 10px;*/
-  width: 100px;
+  width: 60px;
 }
 
 header h1 {
@@ -220,7 +220,7 @@ small {
   display: block !important;
   padding: 40px;
   /*margin: 10px;*/
-  width: 100px;
+  width: 60px;
 }
 
 .secondary-header h2 {
@@ -408,6 +408,7 @@ footer {
   position: sticky;
   text-align: center;
   width: 100%;
+  min-width: 300px;
   margin: 10px auto;
   border-width: 4px;
   border-style: solid;
