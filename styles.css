@@ -509,6 +509,7 @@ span.info-connector {
 }
 
 #playingInfo p.playing-not {
+  color: var(--red);
   text-transform: lowercase !important;
   font-style: italic;
   animation: scroll-left 20s linear infinite;
