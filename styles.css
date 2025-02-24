@@ -397,7 +397,7 @@ small {
 }
 
 .content-column {
-  min-width: 350px;
+  min-width: 250px;
   font-size: 1.35em;
   padding: 20px;
   overflow-wrap: anywhere;
