@@ -142,6 +142,7 @@ body {
   scrollbar-width: thin;
   text-decoration: none;
 }
+
 ::-webkit-scrollbar {
   width: 0.3em;
 }
@@ -233,11 +234,11 @@ small {
 }
 
 #header-01 {
-  background-color: var(--white);
+  background-color: var(--indigo);
 }
 
 #header-02 {
-  background: var(--red);
+  background: var(--maroon);
 }
 
 #header-03 {
@@ -266,7 +267,9 @@ small {
   max-width: 1024px;
   margin: auto;
 }
+
 #containerized {
+  position: relative;
   display: inline-flex;
   width: 100%;
   margin: 10px auto;
@@ -285,35 +288,35 @@ small {
 }
 
 .column#column-01 {
-  border-color: var(--white);
-  background-color: var(--white-soft);
+  border-color: var(--indigo);
+  background-color: var(--indigo-soft);
 }
 
 .column#column-01 a {
-  color: var(--white) !important;
-  border-color: var(--white);
+  color: var(--indigo) !important;
+  border-color: var(--indigo);
 }
 
 .column#column-01 a:hover,
 .column#column-01 a:active {
   color: var(--black) !important;
-  background-color: var(--white) !important;
+  background-color: var(--indigo) !important;
 }
 
 .column#column-02 {
-  border-color: var(--red);
-  background-color: var(--red-soft);
+  border-color: var(--maroon);
+  background-color: var(--maroon-soft);
 }
 
 .column#column-02 a {
-  color: var(--red) !important;
-  border-color: var(--red);
+  color: var(--maroon) !important;
+  border-color: var(--maroon);
 }
 
 .column#column-02 a:hover,
 .column#column-02 a:active {
   color: var(--black) !important;
-  background-color: var(--red) !important;
+  background-color: var(--maroon) !important;
 }
 
 .column#column-03 {
@@ -403,36 +406,6 @@ small {
   overflow-wrap: anywhere;
 }
 
-footer {
-  font-size: 90%;
-  position: sticky;
-  text-align: center;
-  width: 100%;
-  margin: 10px auto;
-  border-width: 4px;
-  border-style: solid;
-  bottom: 10px;
-  background-color: var(--black-soft);
-  border-color: var(--red);
-}
-
-.footer a {
-  color: var(--red);
-  border: 0 none;
-  text-decoration: underline;
-}
-
-.footer a:hover,
-.footer a:active {
-  background-color: var(--red);
-}
-
-#footer-inner {
-  position: sticky;
-  bottom: 1em;
-  background-color: var(--red-soft);
-}
-
 #blinking {
   font-size: 14px;
   height: 10px;
@@ -452,6 +425,7 @@ footer {
   0% {
     filter: opacity(0);
   }
+
   100% {
     filter: opacity(1);
   }
@@ -466,6 +440,21 @@ div#nowPlaying-container {
   overflow: hidden;
   position: relative;
   display: inline-block;
+  border-width: 4px;
+  border-style: solid;
+  background-color: var(--red-soft);
+  border-color: var(--red);
+}
+
+#nowPlaying-container a {
+  color: var(--red);
+  border: 0 none;
+  text-decoration: underline;
+}
+
+#nowPlaying-container a:hover,
+#nowPlaying-container a:active {
+  background-color: var(--red);
 }
 
 div#nowPlaying-container #playingInfo p {
@@ -582,9 +571,7 @@ p.playing-not a {
 /* END EQUALIZER */
 
 @media only screen and (max-width: 720px) {
-
-.column ul {
-  column-count: 1;
-}
-
+  .column ul {
+    column-count: 1;
+  }
 }
