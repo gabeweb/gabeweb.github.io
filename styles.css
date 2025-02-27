@@ -168,7 +168,8 @@ body {
 }
 
 a {
-  border-bottom: 1px solid var(--green);
+  border-bottom: 1px solid;
+  transition-duration: 0.5s !important;
 }
 
 a:hover,
@@ -176,6 +177,7 @@ a:active {
   text-decoration: none;
   background-color: var(--accentColor);
   color: var(--black) !important;
+  transition-property: background-color !important;
 }
 
 ul {
