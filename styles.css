@@ -514,6 +514,7 @@ div#timestamp-container a {
 .material-icon {
   font-family: var(--fontIcons);
   vertical-align: baseline;
+}
 
 /* greeting's time */
 
