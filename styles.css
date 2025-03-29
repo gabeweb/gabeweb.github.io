@@ -43,6 +43,14 @@
   font-weight: 300;
 }
 
+@font-face {
+  font-family: "MaterialIcons";
+  src: url("asset/fonts/MaterialIcons/MaterialIconsOutlined-Regular.otf")
+    format("opentype");
+  font-style: normal;
+  font-weight: 300;
+}
+
 /* Colors and other var*/
 :root {
   /* GLOBAL  COLORS  */
@@ -117,6 +125,7 @@
   --white-soft: color-mix(in srgb, var(--white) 15%, transparent);
 
   --fontFamily: "IBM Plex Mono", monospace;
+  --fontIcons: MaterialIcons;
   font-feature-settings: "zero" 1;
   --invert: 0;
   --scrollbar: var(--accentColor);
@@ -462,7 +471,7 @@ div#timestamp-container a {
 
 #time-date {
   /*font-family: var(--fontHeader);*/
-  /*font-size: 2em;*/
+  font-size: 1.2em;
   font-weight: bold;
 }
 
@@ -478,6 +487,33 @@ div#timestamp-container a {
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-delay: -0.5s;
 }
+
+#hourly-chime-button {
+  padding: 5px 10px;
+  border: 1px solid var(--green);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--green);
+  background-color: var(--green-soft); /* Verde opacado */
+  transition: background-color 0.3s ease;
+}
+
+#hourly-chime-button.chime-on {
+  background-color: var(--green); /* Verde brillante */
+  border: 1px solid var(--green-soft);
+  color: var(--black);
+}
+
+#hourly-chime-button.chime-off {
+  background-color: var(--green-soft); /* Verde opacado */
+  border: 1px solid var(--green);
+}
+
+.material-icon {
+  font-family: var(--fontIcons);
+  vertical-align: baseline;
 
 /* greeting's time */
 
