@@ -417,28 +417,32 @@ small {
   overflow-wrap: anywhere;
 }
 
-#blinking {
+.blinking {
   font-size: 14px;
   height: 10px;
   padding: 2px;
-  color: var(--black);
-  background-color: var(--yellow);
   position: relative;
   bottom: 1em;
+  animation: blink 0.5s infinite;
 }
 
-#blinking::before {
-  animation: blink 0.5s infinite;
-  content: "New!";
+.blinking#new {
+  color: var(--white);
+  background-color: var(--red);
+}
+
+.blinking#updated {
+  color: var(--black);
+  background-color: var(--green);
 }
 
 @keyframes blink {
   0% {
-    filter: opacity(0);
+    color: transparent;
   }
 
   100% {
-    filter: opacity(1);
+    color: initial;
   }
 }
 
