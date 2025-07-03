@@ -423,7 +423,7 @@ small {
   padding: 2px;
   position: relative;
   bottom: 1em;
-  animation: blink 0.5s infinite;
+  animation: blink 2s infinite;
 }
 
 .blinking#new {
@@ -438,11 +438,11 @@ small {
 
 @keyframes blink {
   0% {
-    color: transparent;
+    opacity: 0.1;
   }
 
   100% {
-    color: initial;
+    opacity: 1;
   }
 }
 
@@ -621,7 +621,7 @@ div#nowPlaying-container {
 }
 
 div#nowPlaying-container #playingInfo p {
-  margin: -4 auto;
+  margin: 20px auto;
   padding: 0px;
 }
 
@@ -657,11 +657,11 @@ span.info-connector {
   font-weight: 300;
   position: relative;
   display: inline-flex;
-  margin: 0 1em 0 0.75em;
+  margin: 0 0.75em 0 0.75em;
 }
 
-#playingInfo p.playing-not {
-  color: var(--red);
+p.playing-not, p.playing-not span {
+  color: var(--red) !important;
   text-transform: lowercase !important;
   font-style: italic;
   animation: scroll-left 20s linear infinite;
