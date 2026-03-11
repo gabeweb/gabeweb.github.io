@@ -56,9 +56,9 @@ window.onload = function () {
     const zeroFill = (n) => ("0" + n).slice(-2);
     const timeDate =
       zeroFill(now.getHours()) +
-      ":" +
+      "<span id='dottime'>:</span>" +
       zeroFill(now.getMinutes()) +
-      ":" +
+      "<span id='dottime'>:</span>" +
       zeroFill(now.getSeconds());
     const dateTime =
       now.toDateString();
