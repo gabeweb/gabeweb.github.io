@@ -277,6 +277,7 @@ small {
   width: 100%;
   max-width: 1024px;
   margin: auto;
+  padding: 20px 20px 0px 20px;
 }
 
 #containerized {
@@ -412,7 +413,7 @@ small {
 
 .content-column {
   min-width: 250px;
-  font-size: 1.35em;
+  font-size: 1.25em;
   padding: 20px;
   overflow-wrap: anywhere;
 }
