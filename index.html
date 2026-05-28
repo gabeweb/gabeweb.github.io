@@ -1,25 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="favicon.ico" type="image/x-ico" />
+    <link rel="icon" href="favicon.gif" type="image/gif" />
 
-  <link rel="icon" href="favicon.ico" type="image/x-ico" />
-  <link rel="icon" href="favicon.gif" type="image/gif" />
+    <!-- gabeweb.github.io -->
 
-  <!-- gabeweb.github.io -->
+    <title>GABEweb @ GitHub</title>
 
-  <title>GABEweb @ GitHub</title>
+    <link rel="stylesheet" href="styles.css" />
 
-  <link rel="stylesheet" href="styles.css" />
+    <!-- JQUERY REQUIRED FOR LAST.FM SCROBBLER -->
+    <script type="text/javascript" src="scripts/jquery.min.js"></script>
 
-  <!-- JQUERY REQUIRED FOR LAST.FM SCROBBLER -->
-  <script type="text/javascript" src="scripts/jquery.min.js"></script>
-
-  <script type="text/javascript" src="scripts/lastfm.jquery.js"></script>
-  <script type="text/javascript">
+    <script type="text/javascript" src="scripts/lastfm.jquery.js"></script>
+    <script type="text/javascript">
       /*<![CDATA[*/ $(document).ready(function () {
         $("#lastBox").lastplayed({
           apikey: "518602081119232574d506e55f6d2892",
@@ -35,32 +34,42 @@
             '<p class="playing-not"><span style="animation: blink 1s infinite; animation-direction: alternate; margin: 0px 8px;">//</span>See recently played tracks on:<span style="margin: 0px 8px;"></span><a href="https://last.fm/user/gabeweb" target="_blank">last.fm/user/gabeweb</a></p>',
         });
       }); /*]]>*/
-  </script>
+    </script>
 
-  <script type="text/javascript">
-    // Open links in new tab
-    document.addEventListener("click", function (e) {
-      if (e.target.tagName == "A" && !e.target.hasAttribute("target")) {
-        e.target.setAttribute("target", "_blank");
-      }
-    });
-  </script>
-</head>
+    <script type="text/javascript">
+      // Open links in new tab
+      document.addEventListener("click", function (e) {
+        if (e.target.tagName == "A" && !e.target.hasAttribute("target")) {
+          e.target.setAttribute("target", "_blank");
+        }
+      });
+    </script>
+  </head>
 
-<body>
-  <div class="container fade-in">
-    <div id="containerized" class="timestamp-container column animated-box">
-      <div id="timestamp-container">
-        <span id="greeting"></span><br>
-        <a href="https://www.timeanddate.com/worldclock/@3647651" title="Current Local Time in Cabimas, Venezuela"
-          target="_blank"><span id="time-date"></span></a>
-        <div id="hourly-chime-container" style="display: inline-block;">
-          <button id="hourly-chime-button" class="chime-on material-icon" alt="Hourly Time Signal"
-            title="Hourly Time Signal">notifications_active</button>
+  <body>
+    <div class="container fade-in">
+      <div id="containerized" class="timestamp-container column animated-box">
+        <div id="timestamp-container">
+          <span id="greeting"></span><br />
+          <a
+            href="https://www.timeanddate.com/worldclock/@3647651"
+            title="Current Local Time in Cabimas, Venezuela"
+            target="_blank"
+            ><span id="time-date"></span
+          ></a>
+          <div id="hourly-chime-container" style="display: inline-block">
+            <button
+              id="hourly-chime-button"
+              class="chime-on material-icon"
+              alt="Hourly Time Signal"
+              title="Hourly Time Signal"
+            >
+              notifications_active
+            </button>
+          </div>
+          <span id="date-time"></span>
         </div>
-        <span id="date-time"></span>
       </div>
-    </div>
 
       <div id="containerized">
         <div id="nowPlaying-container">
@@ -68,282 +77,518 @@
         </div>
       </div>
 
-    <div class="main">
-      <div id="containerized">
-        <header id="header-01">
-          <h1 id="rotation">GABEweb @ GitHub</h1>
-        </header>
-        <div class="column" id="column-01">
-          <div class="content-column">
-            <h2>GitHub</h2>
-            <ul>
-              <li>
-                GABE://<a href="https://github.com/gabeweb?tab=repositories" title="GitHub: gabeweb">Home</a>
-              </li>
-              <ol>
-                /<a href="https://gist.github.com/gabeweb/ba14d475bfe0a9b33fbe1006b1fe4766" title="12to24.user.js" target="_blank">12to24.user.js</a>/
-                <small>convert all elements with 12-hour time to 24-hour automatically</small>
-              </ol>
-              <ol>
-                /<a href="https://github.com/gabeweb/Absolute-Enable-Copy" title="Absolute Enable Right-Click & Copy [Clean]" target="_blank">Absolute Enable Right-Click & Copy [Clean]</a>/
-                <small>Chrome extension that enables right-click and copy functionality</small>
-              </ol>
-              <ol>
-                /<a href="https://gist.github.com/gabeweb/a126aa204c2c08882ed192e16173457c"
-                  title="debloater.txt">debloater.txt</a>/
-                <small>minimal debloat list for Xiaomi/Redmi and other Android
-                  phones</small>
-              </ol>
-              <ol>
-                /<a href="https://github.com/gabeweb/Emergency_Kit_Sheet" title="Emergency Kit Sheet">Emergency_Kit_Sheet</a>/
-                <span class="blinking" id="new">new!</span>
-                <small>an emergency kit workbook for Bitwarden and KeePass</small>
-              </ol>
-              <ol>
-                /<a href="https://github.com/gabeweb/gabeChrome.css" title="gabeChrome.css">gabeChrome.css</a>/
-                <small>custom theme for Mozilla Firefox</small>
-              </ol>
-              <ol>
-                /GABEhoo!/
-                <small>a start page / <a href="https://gabeweb.github.io/gabehoo"
-                    title="GABEhoo!: live preview">preview</a> / <a href="https://github.com/gabeweb/GABEhoo"
-                    title="GABEhoo!: repo">repo</a></small>
-              </ol>
-              <ol>
-                /GABEstart/
-                <small>a start page / <a href="https://gabeweb.github.io/gabestart"
-                    title="GABEstart: live preview">preview</a> / <a href="https://github.com/gabeweb/gabestart"
-                    title="GABEstart: repo">repo</a></small>
-              </ol>
-              <ol>
-                /<a href="https://gist.github.com/gabeweb/80e2d64aebafdc8909693e162ae11175" title="Gmail_Full_Timestamp.js">Gmail_Full_Timestamp.js</a>/
-                <span class="blinking" id="new">new!</span>
-                <small>display full timestamp on Gmail inbox/folders</small>
-              </ol>
-              <ol>
-                /<a href="https://github.com/gabeweb/KeePassKeyFile.ODS"
-                  title="KeePassKeyFile.ODS">KeePassKeyFile.ODS</a>/
-                <span class="blinking" id="updated">updated!</span>
-                <small>key pass generator for KeePass databse</small>
-              </ol>
-              <ol>
-                /<a href="https://gist.github.com/gabeweb/95aa0254101b546761f533b5d1be12d9" title="user.js">user.js</a>/
-                <small>custom settings for Mozilla Firefox</small>
-              </ol>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div id="containerized">
-        <div class="secondary-header" id="header-02">
-          <h2 id="rotation">GABEweb @ Social</h2>
-        </div>
-        <div class="column" id="column-02">
-          <div class="content-column">
-            <h2>Social</h2>
-            <h4>Forums</h4>
-            <ul>
-              <li><a href="https://dev.to/gabeweb" title="DEV: gabeweb">DEV</a></li>
-              <li><a href="https://connect.mozilla.org/t5/user/viewprofilepage/user-id/48" title="moz://a Connect: gabeweb">moz://a Connect</a></li>
-              <li><a href="https://www.reddit.com/u/gabeweb" title="Reddit: u/gabeweb">Reddit</a></li>
-              <li><a href="https://stackexchange.com/users/1634250/gabeweb?tab=accounts"
-                  title="StackExchange: gabeweb">StackExchange</a></li>
-            </ul>
-            <h4>Messengers</h4>
-            <ul>
-              <li>
-                <a href="https://discord.com/users/466586135964024832" title="Discord: @gabeweb">Discord</a>
-              </li>
-            </ul>
-            <h4>Micro Networks</h4>
-            <ul>
-              <li>
-                <a href="https://bsky.app/profile/gabeweb.bsky.social" title="Bluesky: @gabeweb.bsky.social">Bluesky</a>
-              </li>
-              <li><a href="https://www.instagram.com/gabeweb/" title="Instagram: @gabeweb">Instagram</a></li>
-              <li><a href="https://mastodon.social/@gabeweb" title="Mastodon: @gabeweb@mastodon.social">Mastodon</a>
-              </li>
-              <li><a href="https://www.threads.com/@gabeweb/" title="Threads: @gabeweb">Threads</a></li>
-              <li><a href="https://www.x.com/gabeweb" title="𝕏: @gabeweb">𝕏</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div id="containerized">
-        <div class="secondary-header" id="header-03">
-          <h2 id="rotation">GABEweb @ Media</h2>
-        </div>
-        <div class="column" id="column-03">
-          <div class="content-column">
-            <h2>Media</h2>
-
-            <h4>Gaming</h4>
-            <ul>
-              <li>
-                <a href="https://www.duolingo.com/profile/gabeweb" title="Duolingo: gabeweb">Duolingo</a>
-              </li>
-              <li>
-                <a href="https://my.play/gabeweb" title="Google Play Games: gabeweb">Google Play Games</a>
-              </li>
-              <li>
-                <a href="https://gabeweb.itch.io/" title="itch.io: gabeweb">itch.io</a>
-              </li>
-              <li>
-                <a href="https://steamcommunity.com/id/gabeweb" title="Steam: gabeweb">Steam</a>
-              </li>
-            </ul>
-            <h4>Music</h4>
-            <ul>
-              <li>
-                <a href="https://hypem.com/gabeweb" title="Hype Machine: gabeweb">Hype Machine</a>
-              </li>
-              <li><a href="https://www.last.fm/user/gabeweb" title="Last.fm: gabeweb">Last.fm</a></li>
-              <li>
-                <a href="https://open.spotify.com/user/gabeweb" title="Spotify: gabeweb">Spotify</a>
-              </li>
-              <li>
-                <a href="https://stats.fm/gabeweb" title="stats.fm: gabeweb">stats.fm
-              </li>
-              <li><a href="https://www.volt.fm/gabeweb" title="volt.fm: gabeweb">volt.fm</a></li>
-              <li>
-                <a href="https://music.youtube.com/playlist?list=PLBA9501C8A3B2D76E&si=r_zx5SUyNkKqmLyk"
-                  title="YouTube: @gabeweb">YouTube Music</a>
-              </li>
-            </ul>
-            <h4>TV Shows / Movies</h4>
-            <ul>
-              <li>
-                <a href="https://www.trakt.tv/users/gabeweb" title="Trakt: gabeweb">Trakt</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div id="containerized">
-        <div class="secondary-header" id="header-04">
-          <h2 id="rotation">GABEweb @ Blogger</h2>
-        </div>
-        <div class="column" id="column-04">
-          <div class="content-column">
-            <h2>Blogger</h2>
-            <ul>
-              <li><a href="https://gabemax.blogspot.com" title="GABEmax">GABEmax</a></li>
-              <li><a href="https://gabemode.blogspot.com" title="GABEmode">GABEmode</a></li>
-              <li><a href="https://gabeturbo.blogspot.com" title="GABEturbo">GABEturbo</a></li>
-              <li><a href="https://gabegizmo.blogspot.com" title="GABEgizmo">GABEgizmo</a></li>
-              <li><a href="https://gabeindie.blogspot.com" title="GABEindie">GABEindie</a></li>
-              <li><a href="https://gabeweb.blogspot.com" title="GABEblog">GABEblog</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div id="containerized">
-        <div class="secondary-header" id="header-05">
-          <h2 id="rotation">GABEweb @ Tumblr</h2>
-        </div>
-        <div class="column" id="column-05">
-          <div class="content-column">
-            <h2>Tumblr</h2>
-            <ul>
-              <li><a href="https://gabemax.tumblr.com" title="GABEmax">GABEmax</a></li>
-              <li><a href="https://gabeturbo.tumblr.com" title="GABEturbo">GABEturbo</a></li>
-              <li><a href="https://gabegizmo.tumblr.com" title="GABEgizmo">GABEgizmo</a></li>
-              <li><a href="https://gabeindie.tumblr.com" title="GABEindie">GABEindie</a></li>
-              <li><a href="https://gabehits.tumblr.com" title="GABEhits">GABEhits</a></li>
-              <li><a href="https://gabeweb.tumblr.com" title="GABEtumblr">GABEtumblr</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div id="containerized">
-        <div class="secondary-header" id="header-06">
-          <h2 id="rotation">GABEweb @ Wallets</h2>
-        </div>
-        <div class="column" id="column-06">
-          <div class="content-column">
-            <h2>Wallets</h2>
-            <ul>
-              <li><a href="https://coindrop.to/gabeweb" title="Coindrop: gabeweb">Coindrop</a></li>
-              <li><a href="https://ko-fi.com/gabeweb" title="Ko-fi: gabeweb">Ko-fi</a></li>
-              <li>
-                <a href="https://base.app/profile/gabeweb" title="gabeweb.base.eth">gabeweb.base.eth</a>
-              </li>
-              <li>
-                <a href="https://ud.me/gabeweb.polygon" title="gabeweb.polygon">gabeweb.polygon</a>
-              </li>
-              <li>
-                <a href="https://ud.me/gabeweb.wallet" title="gabe.wallet">gabeweb.wallet</a>
-              </li>
-              <li>
-                <a href="https://ud.me/gabewebx.blockchain" title="gabewebx.blockchain">gabewebx.blockchain</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div id="containerized">
-        <div class="secondary-header" id="header-07">
-          <h2 id="rotation">GABEweb @ Others</h2>
-        </div>
-        <div class="column" id="column-07">
-          <div class="content-column">
-            <h2>Others</h2>
-
-            <h3>Mozilla Stuff</h3>
-
-            <ul style="font-size: 0.8em">
-              <li>
-                My Picked Firefox Add-ons:
+      <div class="main">
+        <div id="containerized">
+          <header id="header-01">
+            <h1 id="rotation">GABEweb @ GitHub</h1>
+          </header>
+          <div class="column" id="column-01">
+            <div class="content-column">
+              <h2>GitHub</h2>
+              <ul>
+                <li>
+                  GABE://<a
+                    href="https://github.com/gabeweb?tab=repositories"
+                    title="GitHub: gabeweb"
+                    >Home</a
+                  >
+                </li>
                 <ol>
-                  <a href="https://addons.mozilla.org/en-US/firefox/collections/1682134/Everyday-Essentials/?page=1&collection_sort=name"
-                    title="Firefox Add-ons: Everyday Essentials">Everyday
-                    Essentials</a>
+                  /<a
+                    href="https://gist.github.com/gabeweb/ba14d475bfe0a9b33fbe1006b1fe4766"
+                    title="12to24.user.js"
+                    target="_blank"
+                    >12to24.user.js</a
+                  >/
+                  <small
+                    >convert all elements with 12-hour time to 24-hour
+                    automatically</small
+                  >
                 </ol>
                 <ol>
-                  <a href="https://addons.mozilla.org/en-US/firefox/collections/1682134/Privacy-Essentials/?page=1&collection_sort=name"
-                    title="Firefox Add-Ons: Privacy Essentials">Privacy
-                    Essentials</a>
+                  /<a
+                    href="https://github.com/gabeweb/Absolute-Enable-Copy"
+                    title="Absolute Enable Right-Click & Copy [Clean]"
+                    target="_blank"
+                    >Absolute Enable Right-Click & Copy [Clean]</a
+                  >/
+                  <small
+                    >Chrome extension that enables right-click and copy
+                    functionality</small
+                  >
                 </ol>
                 <ol>
-                  <a href="https://addons.mozilla.org/en-US/firefox/collections/1682134/Appearance-Essentials/?page=1&collection_sort=name"
-                    title="Firefox Add-ons: Appareal Essentials">Appareal
-                    Essentials</a>
+                  /<a
+                    href="https://gist.github.com/gabeweb/a126aa204c2c08882ed192e16173457c"
+                    title="debloater.txt"
+                    >debloater.txt</a
+                  >/
+                  <small
+                    >minimal debloat list for Xiaomi/Redmi and other Android
+                    phones</small
+                  >
                 </ol>
-              </li>
-              <li>
-                My Picked Thunderbird Add-ons:
                 <ol>
-                  <a href="https://addons.thunderbird.net/es/thunderbird/collections/gabeweb/favorites/?sort=name"
-                    title="Thunderbird Add-Ons: Thunderbird Essentials">Thunderbird
-                    Essentials</a>
+                  /<a
+                    href="https://github.com/gabeweb/Emergency_Kit_Sheet"
+                    title="Emergency Kit Sheet"
+                    >Emergency_Kit_Sheet</a
+                  >/
+                  <span class="blinking" id="new">new!</span>
+                  <small
+                    >an emergency kit workbook for Bitwarden and KeePass</small
+                  >
                 </ol>
-              </li>
-            </ul>
+                <ol>
+                  /<a
+                    href="https://github.com/gabeweb/gabeChrome.css"
+                    title="gabeChrome.css"
+                    >gabeChrome.css</a
+                  >/
+                  <small>custom theme for Mozilla Firefox</small>
+                </ol>
+                <ol>
+                  /GABEhoo!/
+                  <small
+                    >a start page /
+                    <a
+                      href="https://gabeweb.github.io/gabehoo"
+                      title="GABEhoo!: live preview"
+                      >preview</a
+                    >
+                    /
+                    <a
+                      href="https://github.com/gabeweb/GABEhoo"
+                      title="GABEhoo!: repo"
+                      >repo</a
+                    ></small
+                  >
+                </ol>
+                <ol>
+                  /GABEstart/
+                  <small
+                    >a start page /
+                    <a
+                      href="https://gabeweb.github.io/gabestart"
+                      title="GABEstart: live preview"
+                      >preview</a
+                    >
+                    /
+                    <a
+                      href="https://github.com/gabeweb/gabestart"
+                      title="GABEstart: repo"
+                      >repo</a
+                    ></small
+                  >
+                </ol>
+                <ol>
+                  /<a
+                    href="https://gist.github.com/gabeweb/80e2d64aebafdc8909693e162ae11175"
+                    title="Gmail_Full_Timestamp.js"
+                    >Gmail_Full_Timestamp.js</a
+                  >/
+                  <span class="blinking" id="new">new!</span>
+                  <small>display full timestamp on Gmail inbox/folders</small>
+                </ol>
+                <ol>
+                  /<a
+                    href="https://github.com/gabeweb/KeePassKeyFile.ODS"
+                    title="KeePassKeyFile.ODS"
+                    >KeePassKeyFile.ODS</a
+                  >/
+                  <span class="blinking" id="updated">updated!</span>
+                  <small>key pass generator for KeePass databse</small>
+                </ol>
+                <ol>
+                  /<a
+                    href="https://gist.github.com/gabeweb/95aa0254101b546761f533b5d1be12d9"
+                    title="user.js"
+                    >user.js</a
+                  >/
+                  <small>custom settings for Mozilla Firefox</small>
+                </ol>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-            <h3>Vivaldi Stuff</h3>
+        <div id="containerized">
+          <div class="secondary-header" id="header-02">
+            <h2 id="rotation">GABEweb @ Social</h2>
+          </div>
+          <div class="column" id="column-02">
+            <div class="content-column">
+              <h2>Social</h2>
+              <h4>Forums</h4>
+              <ul>
+                <li>
+                  <a href="https://dev.to/gabeweb" title="DEV: gabeweb">DEV</a>
+                </li>
+                <li>
+                  <a
+                    href="https://connect.mozilla.org/t5/user/viewprofilepage/user-id/48"
+                    title="moz://a Connect: gabeweb"
+                    >moz://a Connect</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.reddit.com/u/gabeweb"
+                    title="Reddit: u/gabeweb"
+                    >Reddit</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://stackexchange.com/users/1634250/gabeweb?tab=accounts"
+                    title="StackExchange: gabeweb"
+                    >StackExchange</a
+                  >
+                </li>
+              </ul>
+              <h4>Messengers</h4>
+              <ul>
+                <li>
+                  <a
+                    href="https://discord.com/users/466586135964024832"
+                    title="Discord: @gabeweb"
+                    >Discord</a
+                  >
+                </li>
+              </ul>
+              <h4>Micro Networks</h4>
+              <ul>
+                <li>
+                  <a
+                    href="https://bsky.app/profile/gabeweb.bsky.social"
+                    title="Bluesky: @gabeweb.bsky.social"
+                    >Bluesky</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/gabeweb/"
+                    title="Instagram: @gabeweb"
+                    >Instagram</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://mastodon.social/@gabeweb"
+                    title="Mastodon: @gabeweb@mastodon.social"
+                    >Mastodon</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.threads.com/@gabeweb/"
+                    title="Threads: @gabeweb"
+                    >Threads</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.x.com/gabeweb" title="𝕏: @gabeweb">𝕏</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-            <ul style="font-size: 0.8em">
-              <li>
-                <a href="https://themes.vivaldi.net/users/gabeweb" title="Vivaldi Themes">Vivaldi Themes</a>
-              </li>
-            </ul>
+        <div id="containerized">
+          <div class="secondary-header" id="header-03">
+            <h2 id="rotation">GABEweb @ Media</h2>
+          </div>
+          <div class="column" id="column-03">
+            <div class="content-column">
+              <h2>Media</h2>
 
+              <h4>Gaming</h4>
+              <ul>
+                <li>
+                  <a
+                    href="https://www.duolingo.com/profile/gabeweb"
+                    title="Duolingo: gabeweb"
+                    >Duolingo</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://my.play/gabeweb"
+                    title="Google Play Games: gabeweb"
+                    >Google Play Games</a
+                  >
+                </li>
+                <li>
+                  <a href="https://gabeweb.itch.io/" title="itch.io: gabeweb"
+                    >itch.io</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://steamcommunity.com/id/gabeweb"
+                    title="Steam: gabeweb"
+                    >Steam</a
+                  >
+                </li>
+              </ul>
+              <h4>Music</h4>
+              <ul>
+                <li>
+                  <a
+                    href="https://hypem.com/gabeweb"
+                    title="Hype Machine: gabeweb"
+                    >Hype Machine</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.last.fm/user/gabeweb"
+                    title="Last.fm: gabeweb"
+                    >Last.fm</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://open.spotify.com/user/gabeweb"
+                    title="Spotify: gabeweb"
+                    >Spotify</a
+                  >
+                </li>
+                <li>
+                  <a href="https://stats.fm/gabeweb" title="stats.fm: gabeweb"
+                    >stats.fm</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.volt.fm/gabeweb" title="volt.fm: gabeweb"
+                    >volt.fm</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://music.youtube.com/playlist?list=PLBA9501C8A3B2D76E&si=r_zx5SUyNkKqmLyk"
+                    title="YouTube: @gabeweb"
+                    >YouTube Music</a
+                  >
+                </li>
+              </ul>
+              <h4>TV Shows / Movies</h4>
+              <ul>
+                <li>
+                  <a
+                    href="https://www.trakt.tv/users/gabeweb"
+                    title="Trakt: gabeweb"
+                    >Trakt</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div id="containerized">
+          <div class="secondary-header" id="header-04">
+            <h2 id="rotation">GABEweb @ Blogger</h2>
+          </div>
+          <div class="column" id="column-04">
+            <div class="content-column">
+              <h2>Blogger</h2>
+              <ul>
+                <li>
+                  <a href="https://gabemax.blogspot.com" title="GABEmax"
+                    >GABEmax</a
+                  >
+                </li>
+                <li>
+                  <a href="https://gabemode.blogspot.com" title="GABEmode"
+                    >GABEmode</a
+                  >
+                </li>
+                <li>
+                  <a href="https://gabeturbo.blogspot.com" title="GABEturbo"
+                    >GABEturbo</a
+                  >
+                </li>
+                <li>
+                  <a href="https://gabegizmo.blogspot.com" title="GABEgizmo"
+                    >GABEgizmo</a
+                  >
+                </li>
+                <li>
+                  <a href="https://gabeindie.blogspot.com" title="GABEindie"
+                    >GABEindie</a
+                  >
+                </li>
+                <li>
+                  <a href="https://gabeweb.blogspot.com" title="GABEblog"
+                    >GABEblog</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div id="containerized">
+          <div class="secondary-header" id="header-05">
+            <h2 id="rotation">GABEweb @ Tumblr</h2>
+          </div>
+          <div class="column" id="column-05">
+            <div class="content-column">
+              <h2>Tumblr</h2>
+              <ul>
+                <li>
+                  <a href="https://gabemax.tumblr.com" title="GABEmax"
+                    >GABEmax</a
+                  >
+                </li>
+                <li>
+                  <a href="https://gabeturbo.tumblr.com" title="GABEturbo"
+                    >GABEturbo</a
+                  >
+                </li>
+                <li>
+                  <a href="https://gabegizmo.tumblr.com" title="GABEgizmo"
+                    >GABEgizmo</a
+                  >
+                </li>
+                <li>
+                  <a href="https://gabeindie.tumblr.com" title="GABEindie"
+                    >GABEindie</a
+                  >
+                </li>
+                <li>
+                  <a href="https://gabehits.tumblr.com" title="GABEhits"
+                    >GABEhits</a
+                  >
+                </li>
+                <li>
+                  <a href="https://gabeweb.tumblr.com" title="GABEtumblr"
+                    >GABEtumblr</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div id="containerized">
+          <div class="secondary-header" id="header-06">
+            <h2 id="rotation">GABEweb @ Wallets</h2>
+          </div>
+          <div class="column" id="column-06">
+            <div class="content-column">
+              <h2>Wallets</h2>
+              <ul>
+                <li>
+                  <a
+                    href="https://coindrop.to/gabeweb"
+                    title="Coindrop: gabeweb"
+                    >Coindrop</a
+                  >
+                </li>
+                <li>
+                  <a href="https://ko-fi.com/gabeweb" title="Ko-fi: gabeweb"
+                    >Ko-fi</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://base.app/profile/gabeweb"
+                    title="gabeweb.base.eth"
+                    >gabeweb.base.eth</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://ud.me/gabeweb.polygon"
+                    title="gabeweb.polygon"
+                    >gabeweb.polygon</a
+                  >
+                </li>
+                <li>
+                  <a href="https://ud.me/gabeweb.wallet" title="gabe.wallet"
+                    >gabeweb.wallet</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://ud.me/gabewebx.blockchain"
+                    title="gabewebx.blockchain"
+                    >gabewebx.blockchain</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="containerized">
+          <div class="secondary-header" id="header-07">
+            <h2 id="rotation">GABEweb @ Others</h2>
+          </div>
+          <div class="column" id="column-07">
+            <div class="content-column">
+              <h2>Others</h2>
+
+              <h3>Mozilla Stuff</h3>
+
+              <ul style="font-size: 0.8em">
+                <li>
+                  My Picked Firefox Add-ons:
+                  <ol>
+                    <a
+                      href="https://addons.mozilla.org/en-US/firefox/collections/1682134/Everyday-Essentials/?page=1&collection_sort=name"
+                      title="Firefox Add-ons: Everyday Essentials"
+                      >Everyday Essentials</a
+                    >
+                  </ol>
+                  <ol>
+                    <a
+                      href="https://addons.mozilla.org/en-US/firefox/collections/1682134/Privacy-Essentials/?page=1&collection_sort=name"
+                      title="Firefox Add-Ons: Privacy Essentials"
+                      >Privacy Essentials</a
+                    >
+                  </ol>
+                  <ol>
+                    <a
+                      href="https://addons.mozilla.org/en-US/firefox/collections/1682134/Appearance-Essentials/?page=1&collection_sort=name"
+                      title="Firefox Add-ons: Appareal Essentials"
+                      >Appareal Essentials</a
+                    >
+                  </ol>
+                </li>
+                <li>
+                  My Picked Thunderbird Add-ons:
+                  <ol>
+                    <a
+                      href="https://addons.thunderbird.net/es/thunderbird/collections/gabeweb/favorites/?sort=name"
+                      title="Thunderbird Add-Ons: Thunderbird Essentials"
+                      >Thunderbird Essentials</a
+                    >
+                  </ol>
+                </li>
+              </ul>
+
+              <h3>Vivaldi Stuff</h3>
+
+              <ul style="font-size: 0.8em">
+                <li>
+                  <a
+                    href="https://themes.vivaldi.net/users/gabeweb"
+                    title="Vivaldi Themes"
+                    >Vivaldi Themes</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
+      <footer class="footer">
+        <div id="footer-inner"></div>
+      </footer>
     </div>
-    <footer class="footer">
-      <div id="footer-inner"></div>
-    </footer>
-  </div>
 
-  <script src="scripts/main.js"></script>
-
-</body>
-
+    <script src="scripts/main.js"></script>
+  </body>
 </html>
