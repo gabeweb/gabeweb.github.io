@@ -647,6 +647,7 @@ div#nowPlaying-container {
 #nowPlaying-container a:hover,
 #nowPlaying-container a:active {
   background-color: var(--red);
+  color: var(--white) !important;
 }
 
 div#nowPlaying-container #playingInfo p {
@@ -676,7 +677,7 @@ span.titleNowPlaying {
   display: block;
   text-align: center;
   background-color: var(--red);
-  color: var(--black);
+  color: var(--white);
   padding: 4px;
 }
 
