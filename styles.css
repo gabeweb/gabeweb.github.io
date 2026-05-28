@@ -456,7 +456,7 @@ small {
 }
 
 .blinking#new {
-  color: var(--black);
+  color: var(--white);
   background-color: var(--red);
 }
 
