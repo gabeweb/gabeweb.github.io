@@ -634,20 +634,20 @@ div#nowPlaying-container {
   display: inline-block;
   border-width: 4px;
   border-style: solid;
-  background-color: var(--red-soft);
-  border-color: var(--red);
+  background-color: var(--violet-soft);
+  border-color: var(--violet);
 }
 
 #nowPlaying-container a {
-  color: var(--red);
+  color: var(--violet);
   border: 0 none;
   text-decoration: underline;
 }
 
 #nowPlaying-container a:hover,
 #nowPlaying-container a:active {
-  background-color: var(--red);
-  color: var(--white) !important;
+  background-color: var(--violet);
+  color: var(--black) !important;
 }
 
 div#nowPlaying-container #playingInfo p {
@@ -676,8 +676,8 @@ span.titleNowPlaying {
   text-transform: lowercase;
   display: block;
   text-align: center;
-  background-color: var(--red);
-  color: var(--white);
+  background-color: var(--violet);
+  color: var(--black);
   padding: 4px;
 }
 
@@ -692,7 +692,7 @@ span.info-connector {
 
 p.playing-not,
 p.playing-not span {
-  color: var(--red) !important;
+  color: var(--violet) !important;
   text-transform: lowercase !important;
   font-style: italic;
   animation: scroll-left 20s linear infinite;
