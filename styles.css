@@ -683,6 +683,11 @@ div#nowPlaying-container #playingInfo p {
   font-size: 1.5em;
 }
 
+#playingInfo p.playing-not,
+#playingInfo p.playing-not span {
+  color: var(--orange);
+}
+
 #playingInfo p.playing-now:hover,
 #playingInfo p.playing-not:hover {
   animation-play-state: paused;
