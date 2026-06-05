@@ -53,26 +53,27 @@
 
 @font-face {
   font-family: "Doto";
-  src: url("asset/fonts/Doto/Doto.woff2") format("woff2");
+  src: url("asset/fonts/Doto/Doto[ROND\,wght].ttf")
+    format("truetype-variations");
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 /* Colors and other var*/
 
 :root {
   /* SOFT COLORS (Generated automatically via color-mix) */
-  --red-soft: color-mix(in srgb, var(--red) 10%, transparent);
-  --maroon-soft: color-mix(in srgb, var(--maroon) 10%, transparent);
-  --orange-soft: color-mix(in srgb, var(--orange) 10%, transparent);
-  --yellow-soft: color-mix(in srgb, var(--yellow) 10%, transparent);
-  --green-soft: color-mix(in srgb, var(--green) 10%, transparent);
-  --blue-soft: color-mix(in srgb, var(--blue) 10%, transparent);
-  --indigo-soft: color-mix(in srgb, var(--indigo) 10%, transparent);
-  --violet-soft: color-mix(in srgb, var(--violet) 10%, transparent);
+  --red-soft: color-mix(in srgb, var(--red) 5%, transparent);
+  --maroon-soft: color-mix(in srgb, var(--maroon) 5%, transparent);
+  --orange-soft: color-mix(in srgb, var(--orange) 5%, transparent);
+  --yellow-soft: color-mix(in srgb, var(--yellow) 5%, transparent);
+  --green-soft: color-mix(in srgb, var(--green) 5%, transparent);
+  --blue-soft: color-mix(in srgb, var(--blue) 5%, transparent);
+  --indigo-soft: color-mix(in srgb, var(--indigo) 5%, transparent);
+  --violet-soft: color-mix(in srgb, var(--violet) 5%, transparent);
   --lavender-soft: color-mix(in srgb, var(--lavender) 10%, transparent);
   --black-soft: color-mix(in srgb, var(--black) 60%, transparent);
-  --white-soft: color-mix(in srgb, var(--white) 10%, transparent);
+  --white-soft: color-mix(in srgb, var(--white) 5%, transparent);
 }
 
 /* DARK MODE (Yahoo Night Mode) */
@@ -641,20 +642,20 @@ div#nowPlaying-container {
   display: inline-block;
   border-width: 4px;
   border-style: solid;
-  background-color: var(--orange-soft);
-  border-color: var(--orange);
+  background-color: var(--green-soft);
+  border-color: var(--green);
 }
 
 #nowPlaying-container a {
-  color: var(--orange);
+  color: var(--green);
   border: 0 none;
   text-decoration: underline;
 }
 
 #nowPlaying-container a:hover,
 #nowPlaying-container a:active {
-  background-color: var(--orange);
-  color: var(--white) !important;
+  background-color: var(--green);
+  color: var(--black) !important;
 }
 
 div#nowPlaying-container #playingInfo p {
@@ -663,13 +664,15 @@ div#nowPlaying-container #playingInfo p {
 }
 
 #playingInfo p.playing-now,
-#playingInfo p.playing-now *,
 #playingInfo p.playing-not,
+#playingInfo p.playing-now *,
 #playingInfo p.playing-not * {
   font-family: "Doto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
+  font-weight: 900;
   font-style: normal;
+  font-stretch: normal;
+  font-variation-settings: "ROND" 0;
+  font-optical-sizing: auto;
 }
 
 #playingInfo p.playing-now,
@@ -680,12 +683,13 @@ div#nowPlaying-container #playingInfo p {
   overflow: hidden;
   display: inline-flex;
   position: relative;
-  font-size: 1.5em;
+  font-size: 1.7em;
+  line-height: 1em;
 }
 
 #playingInfo p.playing-not,
 #playingInfo p.playing-not span {
-  color: var(--orange);
+  color: var(--green);
 }
 
 #playingInfo p.playing-now:hover,
@@ -698,8 +702,8 @@ span.titleNowPlaying {
   text-transform: lowercase;
   display: block;
   text-align: center;
-  background-color: var(--orange);
-  color: var(--white);
+  background-color: var(--green);
+  color: var(--black);
   padding: 4px;
 }
 
