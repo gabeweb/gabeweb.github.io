@@ -754,10 +754,26 @@ p.playing-not a {
   animation-iteration-count: infinite;
   animation-name: oscillator;
   animation-timing-function: linear;
-  width: 1em;
-  padding-left: 2px;
+  width: 10px;
+  padding: 3px;
   margin-right: 4px;
   background-color: var(--green);
+  appearance: none;
+  border: 0px none;
+  -webkit-mask-image: repeating-linear-gradient(
+    to bottom,
+    black 0px,
+    black 2px,
+    transparent 2px,
+    transparent 3px
+  );
+  mask-image: repeating-linear-gradient(
+    to bottom,
+    black 0px,
+    black 2px,
+    transparent 2px,
+    transparent 3px
+  );
 }
 
 .bars .bar.bar1 {
