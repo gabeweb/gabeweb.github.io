@@ -639,7 +639,7 @@ div#timestamp-container a {
 
 div#nowPlaying-container {
   transition: all 4s cubic-bezier(1, 0.835, 0, 0.945);
-  width: 100%;
+  width: fit-content;
   max-width: 1024px;
   overflow: hidden;
   position: relative;
@@ -648,6 +648,12 @@ div#nowPlaying-container {
   border-style: solid;
   background-color: var(--green-soft);
   border-color: var(--green);
+}
+
+div#playingInfo {
+  display: block;
+  width: 100%;
+  margin: -4px -2px;
 }
 
 #nowPlaying-container a {
@@ -663,8 +669,8 @@ div#nowPlaying-container {
 }
 
 div#nowPlaying-container #playingInfo p {
-  margin: 20px auto;
   padding: 0px;
+  align-content: center;
 }
 
 #playingInfo p.playing-now,
