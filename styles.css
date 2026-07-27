@@ -653,7 +653,7 @@ div#nowPlaying-container {
 div#playingInfo {
   display: block;
   width: 100%;
-  margin: -4px -2px;
+  margin: -4px 0px;
 }
 
 #nowPlaying-container a {
